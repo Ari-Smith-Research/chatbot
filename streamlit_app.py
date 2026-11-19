@@ -1,5 +1,5 @@
 import streamlit as st
-import engine
+from engine import run_chat_inference
 
 # Show title and description.
 st.title("💬 Chatbot")

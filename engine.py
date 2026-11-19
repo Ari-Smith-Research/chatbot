@@ -15,7 +15,7 @@ def _build_message_payload(
     ]
 
     # Retain the most recent MAX_HISTORY_MESSAGES turns
-    trimmed_history = sanitized_history[-config.MAX_HISTORY_MESSAGES :]
+    trimmed_history = sanitized_history[-10:]
 
     return [{"role": "system", "content": system_prompt}, *trimmed_history]
 
